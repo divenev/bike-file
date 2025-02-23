@@ -1,0 +1,228 @@
+body {
+  margin: 12px 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+  background-image: url("./background_img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 96vh;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.08),
+    rgb(255, 255, 255, 0.08)
+  );
+  border-radius: 8px;
+}
+
+header a {
+  margin: 12px;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 28px;
+  color: darkblue;
+  border-radius: 12px;
+}
+
+header p {
+  color: darkblue;
+}
+
+header a:hover {
+  color: blue;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.35),
+    rgb(255, 255, 255, 0.35)
+  );
+  border-radius: 12px;
+  transition: 500ms;
+}
+
+main {
+  margin-bottom: auto;
+}
+
+main > * {
+  font-size: 26px;
+  color: darkblue;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.35),
+    rgb(255, 255, 255, 0.35)
+  );
+  border-radius: 8px;
+  text-align: justify;
+  padding: 28px;
+  margin: 42px 8px;
+  width: 50%;
+  margin-left: auto;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+  width: auto;
+}
+
+.catalog > * {
+  margin: unset;
+  padding: unset;
+  border: 2px solid darkblue;
+  border-radius: 8px;
+}
+
+.catalog p {
+  margin: 4px;
+}
+
+.catalog h3 {
+  width: 100%;
+  border: none;
+  margin: 8px;
+}
+
+.myBike {
+  margin: 8px;
+  padding: 8px;
+}
+
+.message {
+  margin: 6px;
+  border: 2px solid darkblue;
+  border-radius: 8px;
+}
+
+.message p {
+  margin: 2px;
+}
+
+footer {
+  text-align: center;
+  font-size: 20px;
+  color: darkblue;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.08),
+    rgb(255, 255, 255, 0.08)
+  );
+  border-radius: 8px;
+  margin: 4px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+  padding: 42px;
+  margin: 42px 48px;
+  width: 30%;
+  margin-left: auto;
+}
+
+.form > * {
+  text-align: center;
+  font-size: 26px;
+  margin: 8px;
+  padding: 8px;
+  color: darkblue;
+  border-radius: 8px;
+}
+
+.form p {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.form textarea {
+  text-align: left;
+}
+
+form img {
+  height: 200px;
+}
+
+section img {
+  display: flex;
+  height: 150px;
+  margin: 8px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.button {
+  border-radius: 12px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.08),
+    rgb(255, 255, 255, 0.08)
+  );
+  text-decoration: none;
+  margin: 8px;
+  padding: 8px;
+}
+
+.button:hover {
+  color: blue;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.35),
+    rgb(255, 255, 255, 0.35)
+  );
+  transition: 500ms;
+}
+
+.button_del {
+  font-size: 26px;
+}
+
+.button_no_del {
+  font-size: 26px;
+}
+
+.button_del:hover {
+  color: darkred;
+}
+
+@media (max-width: 800px) {
+  header {
+    align-items: start;
+  }
+
+  header a {
+    font-size: 24px;
+  }
+
+  main > * {
+    font-size: 22px;
+    width: auto;
+    margin: 8px;
+    padding: 8px;
+  }
+
+  .form {
+    font-size: 22px;
+    width: auto;
+    margin: 8px;
+    padding: 8px;
+  }
+
+  header nav a {
+    display: flex;
+    flex-direction: column;
+  }
+}
